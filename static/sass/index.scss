@@ -1,0 +1,16 @@
+$h-font:#ffc300;
+
+@mixin border_bottom($px,$style,$color){
+	border-bottom: $px $style $color;
+}
+
+header {
+	color:$h-font;
+}
+.container {
+	.jumbotron {
+		background-color: white;
+		@include border_bottom(2px, solid , $h-font);
+	}
+}
+
