@@ -3,14 +3,26 @@ $h-font:#ffc300;
 @mixin border_bottom($px,$style,$color){
 	border-bottom: $px $style $color;
 }
-
 header {
 	color:$h-font;
 }
 .container {
+	.box {
+		width:50px;
+		height:50px;
+		background-color: #00BFFF;
+		opacity:0.8;
+	}
+	.box-child {
+		width:250px;
+		height:10px;
+		background-color:#00BFFF;
+		opacity:0.3;
+	}
 	.jumbotron {
 		background-color: white;
 		@include border_bottom(2px, solid , $h-font);
 	}
 }
+
 
