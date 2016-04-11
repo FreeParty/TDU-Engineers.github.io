@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>f</title>
+  <link rel="stylesheet" href="./static/stylesheets/bootstrap.css">
+  <link rel="stylesheet" href="./minicolor/jquery.minicolors.css">
+  <link rel="stylesheet" href="./minicolor/jquery.minicolors.png">
+  <link rel="stylesheet" href="./static/stylesheets/oekaki.css">
+</head>
+<div class="navbar navbar-default">
+		<div class="container">
+		  <div class="navbar-header">
+			<a href="/" class="navbar-brand">LOGO(募集中)</a>
+			<button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+			  <span class="icon-bar"></span>
+			  <span class="icon-bar"></span>
+			  <span class="icon-bar"></span>
+			</button>
+		  </div>
+		  <div class="navbar-collapse collapse" id="navbar-main">
+			<ul class="nav navbar-nav">
+			  <li><a href="/">Top</a></li>
+			  <li class="dropdow">
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Service<span class="caret"></span></a>
+				<ul class="dropdown-menu" role="menu">
+				  <li><a href="./oekaki.html">おえかき</a></li>
+				  <li><a href="#">ほげ</a></li>
+				</ul>
+			  </li>
+			  <li><a href="#">Member</a></li>
+			  <li><a href="https://github.com/TDU-Engineers">github</a></li>
+			</ul>
+		  </div>
+		</div>
+	  </div>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-10 col-md-10">
+        <h1>お絵描きソフト ver2</h1>
+		<canvas id="canvas" width="600px" height="480px">html5 に対応していません</canvas>
+		</div>
+      <div class="col-xs-2 col-md-2">
+          <label for="select-color" style="margin-top:50px">:　色選択</label>
+          <input type="text" class="color" id="select-color" style="width:110px; height:30px;">
+			<div id="item">
+				<div id="item1">
+					<p>線の太さ<input type="range" min="0" max="100" value="10" id="lineWidth"><span id="lineNum">10</span></p>
+<p>透 明 度<input type="range" min="0" max="100" value="100" id="alpha"><span id="alphaNum">100</span></p>
+			</div>
+			<div id="item2">
+					<p><button id="undo" class="btn btn-default" style="width:100%">Undo</button></p>
+					<button style="width:100%;" class="btn btn-primary" id="clear">Clear</button>  
+					<button  id="dl" class="btn btn-success" style="width:100%;background-color:rgba(255,255,255,0.5)"><a href="">Save</a></button>
+			</div>
+		</div>
+      </div>
+    </div>
+  </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <script src="./minicolor/jquery.minicolors.js"></script>
+  <script src="./static/javascripts/oekaki.js"></script>
+    <script src="static/javascripts/bootstrap.js"></script>
+  <script>
+  </script>
+</body>
+</html>
